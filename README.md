@@ -1,13 +1,17 @@
 
 # Web-Based Blood Pressure Monitor
 
-A privacy-first, clinical-grade blood pressure estimation app that runs entirely in your browser.
+An experimental blood pressure estimation app that runs entirely in your browser.  This is by means of utilising WebGPU support for ONNX runtime webassembly.
 
 **Features:**
-- **Zero-Cloud Inference**: Uses WebGPU & ONNX Runtime to process video locally. No video ever leaves your device.
+- **Zero-Cloud Inference**: Uses WebGPU & ONNX Runtime to process video locally. No video  leaves your device.
 - **Deep Learning**: Powered by a custom **ResNet-1D** model trained on the UCI Cuff-less Blood Pressure Dataset.
-- **Real-Time Signal Processing**: WebGL compute shaders extract high-fidelity rPPG signals from camera feed.
-- **Smart Calibration**: Personalized offset adjustment for higher accuracy.
+
+## Acknowledgements
+
+This work is based on Sau-Sheong Chan's :
+https://sausheong.com/monitoring-blood-pressure-with-machine-learning-c21ae044dd73
+https://bpmon.sausheong.com/
 
 ---
 
@@ -137,8 +141,4 @@ graph TD
     - **Preprocessing**: The `src/trainer/export_scaler_json.py` script exports the exact training normalization statistics. The web app uses these to Z-score normalize the live signal (`(x - mean) / std`), ensuring the model sees data identical to its training set.
     - **Model**: A 1D ResNet (Residual Neural Network) trained on the UCI dataset, optimized for time-series physiological data.
 
-## Acknowledgements
 
-This work is based on Sau-Sheong Chan's :
-https://sausheong.com/monitoring-blood-pressure-with-machine-learning-c21ae044dd73
-https://bpmon.sausheong.com/
