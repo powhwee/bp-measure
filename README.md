@@ -9,7 +9,7 @@ An experimental blood pressure estimation app that runs entirely in your browser
 
 ## Acknowledgements
 
-This work is based on Sau-Sheong Chan's :
+This work is based on Sau-Sheong Chang's work :
 https://sausheong.com/monitoring-blood-pressure-with-machine-learning-c21ae044dd73
 https://bpmon.sausheong.com/
 

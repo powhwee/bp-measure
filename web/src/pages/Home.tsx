@@ -35,7 +35,7 @@ export function Home() {
                         </div>
                     </div>
                     <div className="mt-16 text-sm text-blue-900">
-                        <p className="mb-2">This work is based on Sau-Sheong Chan's:</p>
+                        <p className="mb-2">This work is based on Sau-Sheong Chang's work:</p>
                         <div className="flex flex-col gap-1">
                             <a href="https://sausheong.com/monitoring-blood-pressure-with-machine-learning-c21ae044dd73" target="_blank" rel="noopener noreferrer" className="link link-hover">
                                 Monitoring Blood Pressure with Machine Learning
